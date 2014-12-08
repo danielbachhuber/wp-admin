@@ -15,4 +15,18 @@ class Admin {
 		return self::$instance;
 	}
 
+	/**
+	 * Set up admin actions
+	 */
+	private function setup_actions() {
+
+	}
+
+	/**
+	 * Set up admin filters
+	 */
+	private function setup_filters() {
+		
+	}
+
 }

@@ -1,0 +1,20 @@
+
+{
+  "name": "wp-admin",
+  "version": "0.1.0",
+  "main": "Gruntfile.js",
+  "author": "Daniel Bachhuber",
+  "license": "GPL V2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danielbachhuber/wp-admin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielbachhuber/wp-admin/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-sass": "~0.6.1",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

@@ -21,6 +21,8 @@ class Frontend {
 	 */
 	private function setup_actions() {
 
+		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts' ) );
+
 	}
 
 	/**
@@ -28,6 +30,15 @@ class Frontend {
 	 */
 	private function setup_filters() {
 		
+	}
+
+	/**
+	 * Enqueue scripts and styles
+	 */
+	public function action_wp_enqueue_scripts() {
+
+		wp_enqueue_style( 'wp-admin', get_template_directory_uri() . '/assets/css/theme.css' );
+
 	}
 
 }

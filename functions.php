@@ -21,9 +21,9 @@ class WP_Admin {
 		spl_autoload_register( array( $this, 'autoload_class' ) );
 
 		if ( is_admin() ) {
-			$this->admin = new WP_Admin\Admin;
+			$this->admin = WP_Admin\Admin::get_instance();
 		} else {
-			$this->frontend = new WP_Admin\Frontend;
+			$this->frontend = WP_Admin\Frontend::get_instance();
 		}
 
 		$this->setup_actions();

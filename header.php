@@ -19,8 +19,12 @@
 
 <body <?php body_class(); ?>>
 
-	<header id="site-header">
+	<header id="site-header" class="row">
 
-		<h1><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="column small-12">
+
+			<h1><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+
+		</div>
 
 	</header>
