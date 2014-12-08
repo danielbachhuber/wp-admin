@@ -1,5 +1,9 @@
 	<?php wp_footer(); ?>
 
+	<footer id="site-footer" class="row">
+		<a href="https://wordpress.org"><small><em>Powered By WordPress</em></small></a>
+	</footer>
+
 	<?php if ( ! is_user_logged_in() ) : ?>
 
 		<script>
