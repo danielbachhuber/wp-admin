@@ -10,7 +10,8 @@ module.exports = function( grunt ) {
 
 			compile: {
 				files: {
-					'assets/css/theme.css' : 'assets/css/scss/theme.scss'
+					'assets/css/theme.css' : 'assets/css/scss/theme.scss',
+					'assets/css/editor-style.css' : 'assets/css/scss/editor-style.scss'
 				}
 			}
 

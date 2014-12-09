@@ -58,6 +58,8 @@ class WP_Admin {
 	 */
 	private function setup_actions() {
 
+		add_action( 'after_setup_theme', array( $this, 'action_after_setup_theme' ) );
+
 	}
 
 	/**
@@ -65,6 +67,13 @@ class WP_Admin {
 	 */
 	private function setup_filters() {
 		
+	}
+
+	/**
+	 * Set up the theme
+	 */
+	public function action_after_setup_theme() {
+		add_editor_style( get_template_directory_uri() . '/assets/css/editor-style.css' );
 	}
 
 }
