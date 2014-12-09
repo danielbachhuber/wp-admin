@@ -21,7 +21,7 @@
 
 	<header id="site-header" class="row">
 
-		<div class="column small-12">
+		<div class="column small-12 medium-10 large-8 end medium-centered">
 
 			<h1><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 

@@ -10,7 +10,7 @@ get_header(); ?>
 		<?php while( have_posts() ) : the_post();
 			$obj = new Post( get_post() );
 		?>
-			<article id="post-<?php echo (int) $obj->get_id(); ?>" class="column small-8 small-centered end">
+			<article id="post-<?php echo (int) $obj->get_id(); ?>" class="column small-12 medium-10 medium-centered large-8 end">
 
 				<h2><?php $obj->the_title(); ?></h2>
 
